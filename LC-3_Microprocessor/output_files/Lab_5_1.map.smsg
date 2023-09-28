@@ -1,0 +1,8 @@
+Info (10281): Verilog HDL Declaration information at slc3_sramtop.sv(8): object "Run" differs only in case from object "RUN" in the same scope File: C:/Users/matth/OneDrive/Desktop/UIUC/ECE-385/Lab 5.2/slc3_sramtop.sv Line: 8
+Info (10281): Verilog HDL Declaration information at slc3_sramtop.sv(8): object "Continue" differs only in case from object "CONTINUE" in the same scope File: C:/Users/matth/OneDrive/Desktop/UIUC/ECE-385/Lab 5.2/slc3_sramtop.sv Line: 8
+Warning (10273): Verilog HDL warning at HexDriver.sv(23): extended using "x" or "z" File: C:/Users/matth/OneDrive/Desktop/UIUC/ECE-385/Lab 5.2/HexDriver.sv Line: 23
+Info (10281): Verilog HDL Declaration information at datapath.sv(13): object "IRSext4" differs only in case from object "IRSEXT4" in the same scope File: C:/Users/matth/OneDrive/Desktop/UIUC/ECE-385/Lab 5.2/datapath.sv Line: 13
+Info (10281): Verilog HDL Declaration information at datapath.sv(13): object "IRSext5" differs only in case from object "IRSEXT5" in the same scope File: C:/Users/matth/OneDrive/Desktop/UIUC/ECE-385/Lab 5.2/datapath.sv Line: 13
+Info (10281): Verilog HDL Declaration information at datapath.sv(13): object "IRSext8" differs only in case from object "IRSEXT8" in the same scope File: C:/Users/matth/OneDrive/Desktop/UIUC/ECE-385/Lab 5.2/datapath.sv Line: 13
+Info (10281): Verilog HDL Declaration information at datapath.sv(13): object "IRSext10" differs only in case from object "IRSEXT10" in the same scope File: C:/Users/matth/OneDrive/Desktop/UIUC/ECE-385/Lab 5.2/datapath.sv Line: 13
+Warning (10273): Verilog HDL warning at mux_4to1_concatenation.sv(18): extended using "x" or "z" File: C:/Users/matth/OneDrive/Desktop/UIUC/ECE-385/Lab 5.2/mux_4to1_concatenation.sv Line: 18

@@ -1,0 +1,7 @@
+module BEN_Logic(
+					 input logic[15:0] BUS,
+					 output logic N, Z, P);
+
+
+
+endmodule 

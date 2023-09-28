@@ -1,0 +1,18 @@
+module mux_2to1  (input					S,
+						input					[15:0] through_1,
+						input 				[15:0] through_0,
+						output logic		[15:0] Q_Out);
+						
+		
+		//s: first bit is CALBR, second is shift signal
+		// 17 bit parallel multiplexer implemented using case statement
+		always_comb
+		begin
+				unique case(MIO_EN)
+						1'b1	:	Q_Out = through_1;
+						1'b0  :  Q_Out = through_0;
+				endcase
+		end
+		
+		
+endmodule

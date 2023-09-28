@@ -1,0 +1,25 @@
+module reg_17 (input  logic Clk, Reset, Shift_En, cin,
+               input  logic [16:0]  D,
+				   input logic [7:0] SW,
+               output logic Shift_Out,
+               output logic [16:0]  Data_Out);
+
+    always_ff @ (posedge Clk)
+    begin
+	 	 if (Reset)
+			begin //notice, this is a sycnrhonous reset, which is recommended on the FPGA
+			  Data_Out[7:0]  <= SW;
+			  Data_Out[16:8] <= 9'h0;
+			end
+		 else if (Shift_En)
+		 begin
+			  //concatenate shifted in data to the previous left-most 3 bits
+			  //note this works because we are in always_ff procedure block
+			  Data_Out <= {D[16], D[16:1]}; 
+	    end
+		 else
+			  Data_Out <= D;
+    end
+    assign Shift_Out = Data_Out[0];
+
+endmodule

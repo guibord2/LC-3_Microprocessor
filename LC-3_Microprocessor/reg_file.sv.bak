@@ -1,0 +1,22 @@
+module reg_file(input logic [15:0] D,
+					 input logic [2:0] DR_MUX, SR2, SR1_MUX
+					 input logic LD_REG, Clk
+					 output logic [15:0] SR2_OUT, SR1_OUT);
+					 
+			
+logic [15:0] reg0_Out, reg1_Out, reg2_Out, reg3_Out, reg4_Out, reg5_Out, reg6_Out, reg7_Out;
+
+
+reg_16		reg0(.Clk(Clk), .Load(), .D(D), .Data_Out(reg0_Out) );
+reg_16		reg1(.Clk(Clk), .Load(), .D(D), .Data_Out(reg1_Out) );
+reg_16		reg2(.Clk(Clk), .Load(), .D(D), .Data_Out(reg2_Out) );
+reg_16		reg3(.Clk(Clk), .Load(), .D(D), .Data_Out(reg3_Out) );
+reg_16		reg4(.Clk(Clk), .Load(), .D(D), .Data_Out(reg4_Out) );
+reg_16		reg5(.Clk(Clk), .Load(), .D(D), .Data_Out(reg5_Out) );
+reg_16		reg6(.Clk(Clk), .Load(), .D(D), .Data_Out(reg6_Out) );
+reg_16		reg7(.Clk(Clk), .Load(), .D(D), .Data_Out(reg7_Out) );
+
+					 
+					 
+					 
+endmodule 

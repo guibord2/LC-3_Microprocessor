@@ -1,0 +1,9 @@
+module sext
+			#(parameter width = 5)
+			(input signed [width-1:0] IR_Val,
+			 output signed[15:0] sext_val);
+			 
+			 assign sext_val = IR_Val;
+			 
+			 
+endmodule 
